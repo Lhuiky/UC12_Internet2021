@@ -1,0 +1,15 @@
+.primeira {
+    background-color: blue;
+    width: 300px;
+    height: 30px;
+    font-size: large;
+    text-align: center;
+}
+
+.segunda {
+    background-color: rgb(255, 145, 0);
+    width: 300px;
+    height: 30px;
+    font-size: large;
+    text-align: center;
+}

@@ -1,0 +1,24 @@
+.titulo {
+    font-size: x-large;
+    color: tomato;
+}
+
+.espacamento1 {
+    width: 50%;
+    height: 150px;
+    border: 1px solid red;
+
+    /*Padding   paddin: 25px para tudo*/
+    padding-top: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+}
+
+.espacamento2 {
+    width: 50%;
+    height: 150px;
+    border: 1px solid blue;
+    padding: 25px 30px;
+}
+
