@@ -1,0 +1,27 @@
+.disp1 {
+    display: inline; /* padrão */
+    width: 1000px; /*Não posso aumentar a largura*/
+    height: 1000px; /*Não posso aumentar a altura*/
+    padding:5px;
+    background-color: rgba(255, 136, 0, 0.472); 
+    font-size: x-large;
+  }
+
+  .disp2 {
+    display: inline-block;
+    width: 250px; /*Posso aumentar a largura*/
+    height: 200px; /*Posso aumentar a altura*/
+    padding: 5px;  
+    background-color: rgba(11, 146, 52, 0.301);
+    font-size: x-large; 
+  }
+
+  .disp3 {
+    display: block; /*1 em cada linha*/
+    width: 500px;
+    height: 200px;
+    padding: 5px;
+    background-color: rgb(162, 0, 255); 
+    font-size: x-large;
+  }
+

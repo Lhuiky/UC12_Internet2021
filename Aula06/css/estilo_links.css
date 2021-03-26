@@ -1,0 +1,29 @@
+/* É IMPORTANTE MANTER ESSA ORDEM */
+
+a {
+    font-size: 1.5em;
+    padding: px;
+    text-decoration: none;
+}
+
+/*ESTADO: NÃO VISITADO */
+a:link {
+    color: #dd7f04;
+}
+
+/*ESTADO: VISITADO*/
+a:visited {
+    color: #06088a;
+}
+
+/*ESTADO: HOVER 
+(quando passamos o mouse sobre o link)*/
+a:hover {
+    color: #000000;
+}
+
+/*ESTADO: ATIVO 
+(Clicar e segurar para ver)*/
+a:active {
+    color: #07b34f;
+}
