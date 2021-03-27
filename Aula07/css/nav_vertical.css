@@ -1,0 +1,21 @@
+ul {
+    /*Zerar a margem e o espaçamento*/
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul a {
+    width: 200px;
+    height: 40px;
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    text-indent: 40px;
+    background: #8EB4E3;
+    line-height: 40px;
+}
+
+a:hover {
+    background-color: steelblue;
+}
