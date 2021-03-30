@@ -1,0 +1,25 @@
+#container {
+    width: 80%;
+    margin: 0px auto;
+    border: 1px solid red;
+}
+
+#caixa_texto1 {
+    width: 100%;
+    clear: both;
+}
+
+#caixa_texto2 {
+    width: 44%;
+    padding: 2%;
+    float:left;
+}
+#caixa_texto3 {
+    width: 46%;
+    padding: 2%;
+    float:right;
+}
+
+img {
+    width: 100%;
+}

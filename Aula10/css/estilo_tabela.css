@@ -1,0 +1,29 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+table {
+    width: 500px;
+    border: 1px solid red;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 7px;
+}
+
+th {
+    text-transform: uppercase;
+    text-align: left;
+    background:lightsalmon;
+    color: white;
+    font-size: 90%;
+}
+
+tr:hover {
+    background-color: #e9c00d;
+}
+.moeda {
+    text-align: right;
+}
