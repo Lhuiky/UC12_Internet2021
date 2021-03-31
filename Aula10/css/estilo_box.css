@@ -1,0 +1,19 @@
+#caixa1 {
+    font-size: 14px;
+    width: 300px;
+    height: 200px;
+    background: #f38d07;
+    margin: 10px;
+}
+
+#caixa2 {
+    font-size: 14px;
+    width: 300px;
+    height: 200px;
+    background: #f38d07;
+    margin: 10px;
+    padding: 30px;
+
+    /*Inclusão dos valores de Borda e Padding*/
+    box-sizing: border-box;
+}
