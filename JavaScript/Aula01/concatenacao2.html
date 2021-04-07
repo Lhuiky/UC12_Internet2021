@@ -12,39 +12,26 @@
 
     <title>JavaScript</title>
 
-
 </head>
 
 <body>
-    <h1 class="display-2">Tipos de variáveis</h1>
+    <h1>Concatenação e Entrada de Dados</h1>
     <hr>
-
     <script>
-        //Strings: pode usar aspas simples ou duplas
-        let nome = 'John Doe'
-        let frase = "Hoje é segunda"
-        let letra = ''
 
-        //Numbers
-        let numeroInteiro = 100
-        let numeroQuebrado = 100.50
+        //Declarações
+        let valor1 = 10
+        let valor2 = 30
 
-        //Boolean
-        let verdadeiro = true
-        let falso = false
+        //Saída Concatenada
+        document.write('<h2>A soma de ' + valor1 + ' + ' + valor2 + ' = ' + (valor1 + valor2) + '</h2>')
 
-        //Saída
-        //alert(nome)
-        document.write(nome)
-        //console.log(nome)
-
-        console.log(nome)
+        //Saída interpolada (template String) usar a crase
+        document.write(`<h2 class="display-5">A soma de ${valor1} + ${valor2} = ${valor1 + valor2}</h2>`)
 
 
     </script>
 
-
-    
 
 
 

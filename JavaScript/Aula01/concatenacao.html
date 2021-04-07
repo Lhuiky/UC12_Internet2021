@@ -12,39 +12,24 @@
 
     <title>JavaScript</title>
 
-
 </head>
 
 <body>
-    <h1 class="display-2">Tipos de variáveis</h1>
+    <h1>Concatenação e Entrada de Dados</h1>
     <hr>
-
     <script>
-        //Strings: pode usar aspas simples ou duplas
-        let nome = 'John Doe'
-        let frase = "Hoje é segunda"
-        let letra = ''
 
-        //Numbers
-        let numeroInteiro = 100
-        let numeroQuebrado = 100.50
+        //Declarações
+        let nome = prompt('Qual é o seu nome: ')
+        let idade = prompt('Qual a sua idade: ')
 
-        //Boolean
-        let verdadeiro = true
-        let falso = false
+        //Saída Concatenada
+        document.write('<h2> Olá ' + nome + ', como você está?' + ' você tem ' + idade + ' anos </h2>')
 
-        //Saída
-        //alert(nome)
-        document.write(nome)
-        //console.log(nome)
-
-        console.log(nome)
-
-
+        //Saída interpolada (template String) usar a crase
+        document.write(`<h2 class="display-1">Olá ${nome}, como você está? Você tem ${idade} anos!</h2>`)
     </script>
 
-
-    
 
 
 
