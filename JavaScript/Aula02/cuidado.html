@@ -19,36 +19,43 @@
 </head>
 
 <body>
-    <h1 class="display-1 text-primary">Estudo do If... Else</h1>
-    <hr>
 
-    <script>
-        let info = true
+    <div class="container">
 
-        if (info) {
-            document.write(`<h1 class="display-5 text-info">Informação Verdadeira</h1>`)
-        } else {
-            document.write(`<h1 class="display-5 text-danger">Informação Falsa</h1>`)
-        }
+        <h1 class="display-5 text-primary">Cuidado</h1>
+        <hr>
 
-        //if Encadeado
+        <script>
+            let nota = prompt('Informe a nota do aluno: ')
+            let media = 7
+            let resposta = ''
 
-        //Declaração
-        let a = 50
-        let b = 50
+            //Impressão
+            document.write('Valor da nota é: ' + nota)
+            document.write('<br>')
+            document.write('Valor da média é: ' + media)
+            document.write('<br>')
+            document.write('<hr>')
 
-        if (a > b) {
-            document.write(`<h1 class="display-5 text-secondary">Informação Verdadeira!</h1>`)
-            document.write(`<h1 class="text-success p-2">${a} é maior que ${b}</h1>`)
-        } else if (b > a) {
-            document.write(`<h1 class="display-5 text-secondary">Informação Verdadeira!</h1>`)
-            document.write(`<h1 class="text-success p-2">${b} é maior que ${a}</h1>`)
-        } else {
-            document.write(`<h1 class="display-5 text-secondary ">Condições Falsas!</h1>`)
-            document.write(`<h1 class="text-success p-2">${a} é igual ${b}</h1>`)
-        }
+            //condicional
+            if (nota === media) {
+                resposta = 'Aprovado'
+            } else {
+                resposta = 'Reprovado'
+            }
+
+            document.write(resposta)
+
+        </script>
+
         
-    </script>
+        </script>
+
+    </div>
+
+
+
+
 
 
 

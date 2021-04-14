@@ -19,36 +19,35 @@
 </head>
 
 <body>
-    <h1 class="display-1 text-primary">Estudo do If... Else</h1>
-    <hr>
 
-    <script>
-        let info = true
+    <div class="container">
 
-        if (info) {
-            document.write(`<h1 class="display-5 text-info">Informação Verdadeira</h1>`)
-        } else {
-            document.write(`<h1 class="display-5 text-danger">Informação Falsa</h1>`)
-        }
+        <h1 class="display-5 text-primary">Operadores de Comparação: Idêntico</h1>
+        <hr>
 
-        //if Encadeado
+        <script>
+            let a = 1
+            let b = 1
 
-        //Declaração
-        let a = 50
-        let b = 50
+            //Saída
+            document.write('Valor de A: ' + a)
+            document.write('<br>')
+            document.write('Valor de B: ' + b)
+            document.write('<br>')
 
-        if (a > b) {
-            document.write(`<h1 class="display-5 text-secondary">Informação Verdadeira!</h1>`)
-            document.write(`<h1 class="text-success p-2">${a} é maior que ${b}</h1>`)
-        } else if (b > a) {
-            document.write(`<h1 class="display-5 text-secondary">Informação Verdadeira!</h1>`)
-            document.write(`<h1 class="text-success p-2">${b} é maior que ${a}</h1>`)
-        } else {
-            document.write(`<h1 class="display-5 text-secondary ">Condições Falsas!</h1>`)
-            document.write(`<h1 class="text-success p-2">${a} é igual ${b}</h1>`)
-        }
-        
-    </script>
+            //condicional
+            if (a === b) {
+                document.write(`${a} é idêntico a ${b}!`)
+            } else {
+                document.write(`${a} não é idêntico a ${b}!`)
+            }
+        </script>
+
+    </div>
+
+
+
+
 
 
 

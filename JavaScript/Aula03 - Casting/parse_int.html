@@ -19,37 +19,41 @@
 </head>
 
 <body>
-    <h1 class="display-1 text-primary">Estudo do If... Else</h1>
-    <hr>
 
-    <script>
-        let info = true
+    <div class="container">
 
-        if (info) {
-            document.write(`<h1 class="display-5 text-info">Informação Verdadeira</h1>`)
-        } else {
-            document.write(`<h1 class="display-5 text-danger">Informação Falsa</h1>`)
-        }
+        <h1 class="display-5 text-primary">Casting: parseInt</h1>
+        <hr>
 
-        //if Encadeado
+        <script>
+            let valor1 = prompt('Informe a nota do aluno: ')
+            let valor2 = prompt('Informe a nota do aluno: ')
 
-        //Declaração
-        let a = 50
-        let b = 50
+            //Cálculo
+            resultado = valor1 + valor2
 
-        if (a > b) {
-            document.write(`<h1 class="display-5 text-secondary">Informação Verdadeira!</h1>`)
-            document.write(`<h1 class="text-success p-2">${a} é maior que ${b}</h1>`)
-        } else if (b > a) {
-            document.write(`<h1 class="display-5 text-secondary">Informação Verdadeira!</h1>`)
-            document.write(`<h1 class="text-success p-2">${b} é maior que ${a}</h1>`)
-        } else {
-            document.write(`<h1 class="display-5 text-secondary ">Condições Falsas!</h1>`)
-            document.write(`<h1 class="text-success p-2">${a} é igual ${b}</h1>`)
-        }
+            //Saída
+            document.write(`Sem Casting: A soma de ${valor1} + ${valor2} = ${resultado}`)
+
+            document.write('<hr>')
+
+            //Casting
+            valor1 = parseInt(valor1)
+            valor2 = parseInt(valor2)
+
+            resultado = valor1 + valor2
+
+            //Saída
+            document.write(`Com Casting: A soma de ${valor1} + ${valor2} = ${resultado}`)
+
+            
+
+        </script>
+
         
-    </script>
+        </script>
 
+    </div>
 
 
 

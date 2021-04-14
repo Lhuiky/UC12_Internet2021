@@ -19,37 +19,37 @@
 </head>
 
 <body>
-    <h1 class="display-1 text-primary">Estudo do If... Else</h1>
-    <hr>
 
-    <script>
-        let info = true
+    <div class="container">
 
-        if (info) {
-            document.write(`<h1 class="display-5 text-info">Informação Verdadeira</h1>`)
-        } else {
-            document.write(`<h1 class="display-5 text-danger">Informação Falsa</h1>`)
-        }
+        <h1 class="display-5 text-primary">Operadores lógicos: E &&</h1>
+        <hr>
 
-        //if Encadeado
+        <script>
 
-        //Declaração
-        let a = 50
-        let b = 50
+            //&& Verdadeiro
+            document.write('Exemplo 1 <br>')
 
-        if (a > b) {
-            document.write(`<h1 class="display-5 text-secondary">Informação Verdadeira!</h1>`)
-            document.write(`<h1 class="text-success p-2">${a} é maior que ${b}</h1>`)
-        } else if (b > a) {
-            document.write(`<h1 class="display-5 text-secondary">Informação Verdadeira!</h1>`)
-            document.write(`<h1 class="text-success p-2">${b} é maior que ${a}</h1>`)
-        } else {
-            document.write(`<h1 class="display-5 text-secondary ">Condições Falsas!</h1>`)
-            document.write(`<h1 class="text-success p-2">${a} é igual ${b}</h1>`)
-        }
-        
-    </script>
+            if (10 == 10 && 20 < 40 && 'a' != 'b') {
+                document.write('Expressão Verdadeira!')
 
+            } else {
+                document.write('Expressão falsa!')
+            }
+
+            document.write('<br>')
+
+            //&& Falso
+            if (10 == 10 && 20 < 40 && 'a' == 'b') {
+                document.write('Expressão Verdadeira!')
+
+            } else {
+                document.write('Expressão falsa!')
+            }
+
+        </script>
+
+    </div>
 
 
 
