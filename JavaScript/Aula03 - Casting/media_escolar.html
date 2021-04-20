@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <title>JavaScript</title>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <h1 class="display-5">Escola Municipal Juiz de Fora</h1>
+        <hr>
+        <h1 class="display-6 text-primary">Cálculo da Média Escolar</h1>
+
+        <script>
+            //Declaração
+            let nomeAluno = prompt('Entre com o nome do aluno: ')
+            let numeroFaltas = prompt('Número de Faltas do aluno: ')
+            let nota1 = prompt('Entre com a 1ª nota: ')
+            let nota2 = prompt('Entre com a 2ª nota: ')
+            let nota3 = prompt('Entre com a 3ª nota: ')
+            let nota4 = prompt('Entre com a 4ª nota: ')
+            let resposta = ''
+            let observacao = ''
+            let media = 0
+
+            //Validações
+            if (nomeAluno == "") {
+
+                observacao = 'Campo nome vazio!'
+
+            } else if (numeroFaltas == '' || parseInt(numeroFaltas) < 0) {
+
+                observacao = 'Valor de faltas negativo ou campo em branco!'
+
+            } else if (
+                nota1 == '' || parseFloat(nota1) > 10 || parseFloat(nota1) < 0 ||
+                nota2 == '' || parseFloat(nota2) > 10 || parseFloat(nota2) < 0 ||
+                nota3 == '' || parseFloat(nota3) > 10 || parseFloat(nota3) < 0 ||
+                nota4 == '' || parseFloat(nota4) > 10 || parseFloat(nota4) < 0) {
+
+                observacao = 'Nota inválida!'
+
+            } else {
+
+                //Casting
+                numeroFaltas = parseInt(numeroFaltas)
+                nota1 = parseFloat(nota1)
+                nota2 = parseFloat(nota2)
+                nota3 = parseFloat(nota3)
+                nota4 = parseFloat(nota4)
+
+                //Calculando a média
+                media = (nota1 + nota2 + nota3 + nota4) / 4
+
+                if (media >= 9 && media <= 10 && numeroFaltas <= 3) {
+                    resposta = 'Aprovado com Mérito!'
+                } else {
+
+                    if (media >= 9 && media <= 10 && numeroFaltas > 3) {
+                        resposta = 'Aluno Aprovado!'
+
+                    } else if (media >= 7 && media < 9) {
+                        resposta = 'Aluno Aprovado!'
+                    } else if (media >= 5 && media < 7) {
+                        resposta = 'Aluno em recuperação!'
+                    } else {
+                        resposta = 'Aluno Reprovado!'
+                    }
+                }
+
+                //Saída Interpolada
+                document.write('<hr>')
+                document.write(`<p class="lead">Nome do aluno: ${nomeAluno}</p>`)
+                document.write(`<p class="lead">Número de Faltas: ${numeroFaltas}</p>`)
+                document.write(`<p class="lead">Notas: ${nota1} : ${nota2} : ${nota3} : ${nota4}</p>`)
+                document.write(`<p class="lead">Média do Aluno: ${media}</p>`)
+                document.write('<hr>')
+                document.write(`<p class="lead">Situação: ${resposta}</p>`)
+
+                //Tratar problema do aluno
+                if (resposta === 'Aluno em recuperação!' || resposta === 'Aluno Reprovado!') {
+                    observacao = 'Enviar email para o(s) responsável(eis)!'
+                } else {
+                    observacao = 'Tudo certo com esse aluno!'
+                }
+            }
+
+            document.write(`<p class="lead text-light bg-dark p-2" >Observação: ${observacao}</p>`)
+            document.write('<hr>')
+        </script>
+
+    </div>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+    </script>
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
